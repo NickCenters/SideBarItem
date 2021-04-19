@@ -1,20 +1,15 @@
-//
-//  ViewController.swift
-//  SideBarItem
-//
-//  Created by Nicholas Centers on 4/16/21.
-//  Copyright © 2021 Nicholas Centers. All rights reserved.
-//
-
 import UIKit
+import SideMenu
 
 class ViewController: UIViewController {
-
+private let sideMenu = SideMenuNavigationController(rootViewController: UIViewController)
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        sideMenu.leftSide = true
     }
-
+    @IBAction func didTapMenuButton(){
+        
+    }
 
 }
 
